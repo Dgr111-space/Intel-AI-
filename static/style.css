@@ -1,0 +1,89 @@
+    /* 自定义动画 */
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* 自定义滚动条 */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    /* 打字效果 */
+    .typing-effect::after {
+      content: "|";
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+
+      from,
+      to {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    /* 渐变背景 */
+    .gradient-bg {
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+    }
+
+    /* 禁用状态样式 */
+    .opacity-50 {
+      opacity: 0.5;
+    }
+
+    .cursor-not-allowed {
+      cursor: not-allowed;
+    }
+
+    /* 震动动画 */
+    @keyframes shake {
+
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+
+      25% {
+        transform: translateX(-5px);
+      }
+
+      75% {
+        transform: translateX(5px);
+      }
+    }
+
+    .animate-shake {
+      animation: shake 0.3s ease-in-out;
+    }
